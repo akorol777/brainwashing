@@ -1,0 +1,614 @@
+*{
+	bottom: 0;margin: 0;
+	font-family:"myriad pro"
+}
+
+li{
+	list-style: none;
+}
+i{display: inline-block;}
+
+.wrap{
+	width: 1200px;
+	margin: 0 auto;
+	padding-top:18px;
+	padding-left:33px;
+}
+
+	header{}
+		.header__photo{
+			position: relative;
+			width: 638px;}
+
+/* Общее для кнопок */
+					.header__other-btn a,.art2__content-btn a{
+						text-decoration: none;
+						display: inline-block;
+						text-align: center;
+						line-height:16px;
+						font-size:16pt; 
+						border-radius: 20px;
+            padding: 12px 20px;
+            color: #000;
+						}
+				/*.header__other-btn a:hover{
+					border: 1px solid #0085b7;
+					background: #19abe1;
+					box-shadow: 0 1px 0 rgba(255,255,255,.88), 0 0 3px rgba(33,173,225,.2), inset 0 1px 0 rgba(255,255,255,.2);
+					-moz-box-shadow: 0 1px 0 rgba(255,255,255,.88), 0 0 3px rgba(33,173,225,.2), inset 0 1px 0 rgba(255,255,255,.2);
+					-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.88), 0 0 3px rgba(33,173,225,.2), inset 0 1px 0 rgba(255,255,255,.2);
+					color: #fff;
+					text-shadow: 0 -1px 0 rgba(0,0,0,.11);*/
+					/* Подкрутить ховер */
+/* Хедер */
+	header{
+		margin-bottom: 50px;
+	}
+		.header__photo{
+			position: relative;
+			width: 638px;
+			float: left;
+			margin-right: 63px;
+		}
+			.header__photo-logo{
+				position: absolute;
+				left: 7px;
+				bottom: 400px;
+				background: #fff;
+				opacity: 0.8;
+				filter: alpha(Opacity=80);
+
+				opacity: 0.9;
+				filter: alpha(Opacity=90);
+
+				opacity: 0.8;
+				filter: alpha(Opacity=80);
+				padding: 9px 18px 5px 10px;
+				box-shadow: 0 2px 5px rgba(0,0,0,.75);
+			}
+				.header__photo-logo img{
+					opacity: 1;
+					filter: alpha(Opacity=1);
+				}
+					.header__photo-logo:before
+					{
+						content: "";
+						position: absolute;
+						left: -7px;
+						top: 0px;
+						width: 7px;
+						height: 72px;
+						background: url(../img/logo__l.png) no-repeat;
+						box-shadow: -2px 0px 2px 0px rgba(0,0,0,.2);
+					}
+					.header__photo-logo:after
+					{
+						content: "";
+						position: absolute;
+						left: 226px;
+						top: 0px;
+						width: 20px;
+						height: 68px;
+						background: url(../img/logo__r.png) no-repeat;
+					}
+			.header__photo-pic{
+				background: url(../img/photo1.jpg) no-repeat;
+				height: 475px;
+			}
+				.header__photo-btn{
+
+					list-style: none;
+
+					padding: 0;
+					display: block;
+					overflow: hidden;
+					padding:13px 0 0 194px;
+				}
+				.header__photo-btn li{	
+					margin: 0;
+					padding: 0;
+					float: left;
+				}
+				.header__photo-btn a{
+					background: #bfbfbf;
+					height: 6px;
+					width: 6px;
+					border-radius:50%;
+					display: block;
+					float: left;
+					margin: 6px;
+
+				}
+				.header__photo-btn a:hover{
+					-webkit-box-shadow:0 0 1px 1px rgba(135, 135, 135, 0.7);
+					-moz-box-shadow:0 0 1px 1px rgba(135, 135, 135, 0.7);
+					box-shadow:0 0 1px 1px rgba(135, 135, 135, 0.7);
+				}
+				.header__photo-btn a.vis{
+					background:#7f7f7f;
+					cursor: default;
+					box-shadow:none;
+					}
+		.header__other{
+		}
+			.header__other-topic{
+				font-size:50pt;	
+				margin-bottom: 10px;
+			}
+			.header__other-text{
+				font-size: 16pt;
+				margin-bottom: 18px;
+			}
+			.header__other-form{}
+			.header__other-form input{
+				padding: 5px 7px;
+				font-size: 18pt;
+				float: left;
+				margin-right: 16px;
+			}
+			.header__other-btn{}	
+					.header__other-btn a{
+						/*text-decoration: none;
+						display: inline-block;
+						text-align: center;
+						line-height:16px;
+						font-size:16pt;*
+						border-radius: 20px;
+            padding: 12px 20px;
+            color: #000;*/
+            background: linear-gradient(to bottom, rgba(204,221,237,1) 50%,rgba(136,168,186,1) 100%);
+            border: 1px solid rgba(35,85,129,.68);
+					}
+				.header__other-btn a:hover{
+					border: 1px solid #0085b7;
+					background: #19abe1;
+					box-shadow: 0 1px 0 rgba(255,255,255,.88), 0 0 3px rgba(33,173,225,.2), inset 0 1px 0 rgba(255,255,255,.2);
+					-moz-box-shadow: 0 1px 0 rgba(255,255,255,.88), 0 0 3px rgba(33,173,225,.2), inset 0 1px 0 rgba(255,255,255,.2);
+					-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.88), 0 0 3px rgba(33,173,225,.2), inset 0 1px 0 rgba(255,255,255,.2);
+					color: #fff;
+					text-shadow: 0 -1px 0 rgba(0,0,0,.11);
+					/* Подкрутить ховер */
+				}
+			.header__other-facebook{
+				margin-top: 34px;
+				max-width:340px;
+				overflow: hidden;
+				margin-bottom: 23px;
+			}	
+				.facebook__like{
+					float: left;
+					margin-right: 10px;
+				}
+					.facebook__like i{
+						background: url(../img/like.png) no-repeat;
+						height: 20px;
+						width: 48px;
+						display: inline-block;
+					}
+				.facebook__icon{
+					font-size: 10pt;
+					margin: 5px 0;
+					line-height: 10pt;
+				}
+						.facebook__icon i{
+							background: url(../img/facebook.png) no-repeat;
+							height: 12px;
+							width: 12px;
+							display: inline-block;
+							margin-right: 6px;
+						}
+						.facebook__icon a{
+							text-decoration: none;
+							color: #4468bb;
+						}
+				.facebook__users{
+					padding: 0;
+					margin-left: 3px;
+				}
+					.facebook__users li{
+						display: block;
+						float: left;
+						width: 32px;
+						height: 32px;
+						margin-left: 1px;
+						margin-bottom: 1px;
+					}
+						.facebook__users li a{}
+							.facebook__users li a img{
+								max-width: 100%;
+							}
+				.header__other-google{
+					font-size: 10pt;
+					margin-bottom: 18px;
+				}
+					.header__other-google span{
+						line-height: 10pt;
+						vertical-align: middle;
+						margin-top: -20px;
+						margin-left: 5px;
+						display: inline-block;
+					}
+						.header__other-google i{
+							background: url(../img/google.png) no-repeat;
+							height: 24px;
+							width: 38px;
+							display: inline-block;
+							margin-right: 6px;
+						}
+						.google__users{
+							display: inline-block;
+							padding: 0;
+						}
+							.google__users li{
+								display: block;
+								float: left;
+								width: 24px;
+								height: 24px;
+								margin-left: 1px;
+								margin-bottom: 1px;
+							}
+								.google__users li a{}
+									.google__users li a img{
+										max-width: 100%;
+									}			
+				.header__other-twitvk{}
+					.twit{
+						float: left;
+						margin-right: 24px;
+					}
+						.twit i{
+							background: url(../img/tweet.png) no-repeat;
+							height: 20px;
+							width: 75px;
+							margin-right: 5px;
+							float: left;
+						}
+						.twit__numb{
+							display: inline-block;
+							border: 1px solid #bbbbbb;
+							position: relative;
+							font-size: 8pt;
+							padding: 5px 3px;
+							line-height: 8pt;
+							border-radius:2px;
+							vertical-align: bottom;
+							
+						}
+							.twit__numb:before{
+								content: "";
+								height: 6px;
+								width: 4px;
+								background: url(../img/tweet-corner.png);
+								position: absolute;
+								left: -4px;
+								top: 6px;
+							}
+					.vk{}
+						.vk i{
+							background: url(../img/vk.png) no-repeat;
+							height: 22px;
+							width: 40px;
+							margin-right: 7px;
+						}				
+							.vk__numb{
+								display: inline-block;
+								border: 1px solid #adbccc;
+								position: relative;
+								font-size: 8pt;
+								font-weight: 600;
+								padding: 5px 3px;
+								line-height: 8pt;
+								border-radius:2px;
+								vertical-align:top;
+								background: #edf2f7;
+								color: #2b587d;
+							}
+								.vk__numb:before{
+									content: "";
+									height: 7px;
+									width: 5px;
+									background: url(../img/vk-corner.gif);
+									position: absolute;
+									left: -4px;
+									top: 6px;
+								}
+	.art1{
+		overflow: hidden;	
+		font-weight: 500;	
+		font:16pt "myriad pro";
+		margin-bottom: 20px;
+	}
+		.art1 h2{
+			float: left;
+		}
+			.art1 h2:last-child{
+				float: right;
+			}
+
+				.header__photo-btn a:hover{
+					-webkit-box-shadow:0 0 1px 1px rgba(135, 135, 135, 0.7);
+					-moz-box-shadow:0 0 1px 1px rgba(135, 135, 135, 0.7);
+					box-shadow:0 0 1px 1px rgba(135, 135, 135, 0.7);
+				}
+				.header__photo-btn a.vis{
+					background:#7f7f7f;
+					cursor: default;
+					box-shadow:none;
+					}
+
+		.header__other{}
+	.art1{}
+
+	.art2{}
+		.art2>div{}
+			.art2__content{
+					width: 280px;
+			}
+				.art2__content a img{
+					float: left;
+					margin-right: 20px;
+				}
+					.art2__content-img{
+						overflow: hidden;
+						margin-bottom: 25px;
+						font-size: 12pt;
+						line-height: 12pt;
+					}
+						.art2__content-img>div{
+							padding-top: 25px;
+						}
+						.art2__content-btn a{
+						  background: linear-gradient(to bottom, rgba(223,232,209,1) 50%,rgba(169,180,145,1) 100%);
+		        	border: 1px solid rgba(95,129,35,.68);
+					  }
+				.art2__content>p{
+					font-size: 13pt;
+				}	  
+				.art2__content>p>a{
+					color: #000;
+				}
+					.art2__content>p>a:hover{
+					text-decoration: none;
+				}
+				
+				.art2__2{}
+				.art2__3{}
+				.art2__4{}
+	.art3{}
+
+	.art4{}
+
+		.header__other{
+		}
+			.header__other-topic{
+				font-size:50pt;	
+				margin-bottom: 10px;
+			}
+			.header__other-text{
+				font-size: 16pt;
+				margin-bottom: 18px;
+			}
+			.header__other-form{}
+			.header__other-form input{
+				padding: 5px 7px;
+				font-size: 18pt;
+				float: left;
+				margin-right: 16px;
+			}
+			.header__other-btn{}	
+					.header__other-btn a{
+						/*text-decoration: none;
+						display: inline-block;
+						text-align: center;
+						line-height:16px;
+						font-size:16pt;*
+						border-radius: 20px;
+            padding: 12px 20px;
+            color: #000;*/
+            background: linear-gradient(to bottom, rgba(204,221,237,1) 50%,rgba(136,168,186,1) 100%);
+            border: 1px solid rgba(35,85,129,.68);
+					}
+				.header__other-btn a:hover{
+					border: 1px solid #0085b7;
+					background: #19abe1;
+					box-shadow: 0 1px 0 rgba(255,255,255,.88), 0 0 3px rgba(33,173,225,.2), inset 0 1px 0 rgba(255,255,255,.2);
+					-moz-box-shadow: 0 1px 0 rgba(255,255,255,.88), 0 0 3px rgba(33,173,225,.2), inset 0 1px 0 rgba(255,255,255,.2);
+					-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.88), 0 0 3px rgba(33,173,225,.2), inset 0 1px 0 rgba(255,255,255,.2);
+					color: #fff;
+					text-shadow: 0 -1px 0 rgba(0,0,0,.11);
+					/* Подкрутить ховер */
+				}
+			.header__other-facebook{
+				margin-top: 34px;
+				max-width:340px;
+				overflow: hidden;
+				margin-bottom: 23px;
+			}	
+				.facebook__like{
+					float: left;
+					margin-right: 10px;
+				}
+					.facebook__like i{
+						background: url(../img/like.png) no-repeat;
+						height: 20px;
+						width: 48px;
+						display: inline-block;
+					}
+				.facebook__icon{
+					font-size: 10pt;
+					margin: 5px 0;
+					line-height: 10pt;
+				}
+						.facebook__icon i{
+							background: url(../img/facebook.png) no-repeat;
+							height: 12px;
+							width: 12px;
+							display: inline-block;
+							margin-right: 6px;
+						}
+						.facebook__icon a{
+							text-decoration: none;
+							color: #4468bb;
+						}
+				.facebook__users{
+					padding: 0;
+					margin-left: 3px;
+				}
+					.facebook__users li{
+						display: block;
+						float: left;
+						width: 32px;
+						height: 32px;
+						margin-left: 1px;
+						margin-bottom: 1px;
+					}
+						.facebook__users li a{}
+							.facebook__users li a img{
+								max-width: 100%;
+							}
+				.header__other-google{
+					font-size: 10pt;
+					margin-bottom: 18px;
+				}
+					.header__other-google span{
+						line-height: 10pt;
+						vertical-align: middle;
+						margin-top: -20px;
+						margin-left: 5px;
+						display: inline-block;
+					}
+						.header__other-google i{
+							background: url(../img/google.png) no-repeat;
+							height: 24px;
+							width: 38px;
+							display: inline-block;
+							margin-right: 6px;
+						}
+						.google__users{
+							display: inline-block;
+							padding: 0;
+						}
+							.google__users li{
+								display: block;
+								float: left;
+								width: 24px;
+								height: 24px;
+								margin-left: 1px;
+								margin-bottom: 1px;
+							}
+								.google__users li a{}
+									.google__users li a img{
+										max-width: 100%;
+									}			
+				.header__other-twitvk{}
+					.twit{
+						float: left;
+						margin-right: 24px;
+					}
+						.twit i{
+							background: url(../img/tweet.png) no-repeat;
+							height: 20px;
+							width: 75px;
+							margin-right: 5px;
+							float: left;
+						}
+						.twit__numb{
+							display: inline-block;
+							border: 1px solid #bbbbbb;
+							position: relative;
+							font-size: 8pt;
+							padding: 5px 3px;
+							line-height: 8pt;
+							border-radius:2px;
+							vertical-align: bottom;
+							
+						}
+							.twit__numb:before{
+								content: "";
+								height: 6px;
+								width: 4px;
+								background: url(../img/tweet-corner.png);
+								position: absolute;
+								left: -4px;
+								top: 6px;
+							}
+					.vk{}
+						.vk i{
+							background: url(../img/vk.png) no-repeat;
+							height: 22px;
+							width: 40px;
+							margin-right: 7px;
+						}				
+							.vk__numb{
+								display: inline-block;
+								border: 1px solid #adbccc;
+								position: relative;
+								font-size: 8pt;
+								font-weight: 600;
+								padding: 5px 3px;
+								line-height: 8pt;
+								border-radius:2px;
+								vertical-align:top;
+								background: #edf2f7;
+								color: #2b587d;
+							}
+								.vk__numb:before{
+									content: "";
+									height: 7px;
+									width: 5px;
+									background: url(../img/vk-corner.gif);
+									position: absolute;
+									left: -4px;
+									top: 6px;
+								}
+	.art1{
+		overflow: hidden;	
+		font-weight: 500;	
+		font:16pt "myriad pro";
+		margin-bottom: 20px;
+	}
+		.art1 h2{
+			float: left;
+		}
+			.art1 h2:last-child{
+				float: right;
+			}
+	.art2{}
+		.art2>div{}
+			.art2__content{
+					width: 280px;
+			}
+				.art2__content a img{
+					float: left;
+					margin-right: 20px;
+				}
+					.art2__content-img{
+						overflow: hidden;
+						margin-bottom: 25px;
+						font-size: 12pt;
+						line-height: 12pt;
+					}
+						.art2__content-img>div{
+							padding-top: 25px;
+						}
+						.art2__content-btn a{
+						  background: linear-gradient(to bottom, rgba(223,232,209,1) 50%,rgba(169,180,145,1) 100%);
+		        	border: 1px solid rgba(95,129,35,.68);
+					  }
+				.art2__content>p{
+					font-size: 13pt;
+				}	  
+				.art2__content>p>a{
+					color: #000;
+				}
+					.art2__content>p>a:hover{
+					text-decoration: none;
+				}
+				
+				.art2__2{}
+				.art2__3{}
+				.art2__4{}
+	.art3{}
+	.art4{}
+
+	footer{}
