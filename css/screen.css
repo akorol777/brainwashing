@@ -211,6 +211,7 @@ img{border:none}
 				.facebook__users{
 					padding: 0;
 					margin-left: 3px;
+					margin-top: 6px;
 				}
 					.facebook__users li{
 						display: block;
